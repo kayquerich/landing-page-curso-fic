@@ -4,8 +4,6 @@
     box-sizing: border-box;
 }
 
-/* global styles */
-
 header {
     height: 80px;
     width: 100%;
@@ -42,7 +40,6 @@ nav {
     letter-spacing: 1px;
 }
 
-/* Links de navegação */
 .nav-links {
     list-style: none;
     display: flex;
@@ -59,7 +56,6 @@ nav {
     position: relative;
 }
 
-/* Efeito de sublinhado animado */
 .nav-links li a::after {
     content: "";
     position: absolute;
@@ -180,10 +176,6 @@ footer {
     padding-bottom: 15px;
 }
 
-/* --------------------------------------------- */
-
-/* home page styles */
-
 .home-body {
     font-family: 'Arial', sans-serif;
 }
@@ -278,4 +270,83 @@ footer {
     }
 }
 
-/* --------------------------------------------- */
+.offers-container {
+    width: 100%;
+    max-width: 1100px;
+    margin: 80px auto;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    color: #333;
+}
+
+.offers-container .text-content h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.offers-container .text-content p {
+    color: #777;
+    font-size: 1rem;
+    margin-bottom: 40px;
+}
+
+.offers-card-list {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.offer-card {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    padding: 20px;
+    width: 300px;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.offer-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+}
+
+.offer-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.offer-card strong {
+    font-size: 1.2rem;
+    color: #000;
+    margin-bottom: 8px;
+}
+
+.offer-card h3 {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.btn-secondary {
+    background-color: #ff3b2d;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s;
+}
+
+.btn-secondary:hover {
+    background-color: #e32f21;
+}
